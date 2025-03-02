@@ -14,6 +14,12 @@ services:
       STAGE: DEV
       SUITE: users
       API_TOKEN: ${API_TOKEN}
+      TOKEN_PROD: ${TOKEN_PROD}
+      TOKEN_DEV: ${TOKEN_DEV}
+      NAME: ${NAME}
+      ID: ${ID}
+      TRAINER_ID_PROD: ${TRAINER_ID_PROD}
+      TRAINER_ID_DEV: ${TRAINER_ID_DEV}
 
   report:
     image: api-tests:v1

@@ -13,7 +13,6 @@ services:
     environment:
       STAGE: DEV
       SUITE: users
-      API_TOKEN: ${API_TOKEN}
       TOKEN_PROD: ${TOKEN_PROD}
       TOKEN_DEV: ${TOKEN_DEV}
       NAME: ${NAME}
