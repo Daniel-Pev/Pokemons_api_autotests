@@ -35,24 +35,26 @@ jobs:
         pytest --alluredir=./allure-results
       continue-on-error: true
 
-    - name: Generate Allure Report
-      uses: simple-elf/allure-report-action@v1
+    - name: Load test report history
+      uses: actions/checkout@v3
+      if: always()
+      continue-on-error: true
       with:
-        allure_results: allure-results
-        allure_report: allure-report
-        enable_charts: true
+        ref: gh-pages
+        path: gh-pages
 
-    - name: Upload Allure Report Artifact
-      uses: actions/upload-artifact@v4
+    - name: Build test report
+      uses: simple-elf/allure-report-action@v1.7
+      if: always()
       with:
-        name: allure-report
-        path: allure-report
-        retention-days: 10
+        gh_pages: gh-pages
+        allure_history: allure-history
+        allure_results: build/allure-results
 
-    - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Publish test report
+      uses: peaceiris/actions-gh-pages@v3
+      if: always()
       with:
-        branch: gh-pages
-        folder: allure-report
-        token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: allure-history
