@@ -1,0 +1,35 @@
+stages:
+    - tests
+    - report
+
+variables:
+    STAGE: DEV
+
+services:
+    - docker:24.0.5-dind
+
+run_tests:
+    stage: tests
+    image: docker:24.0.5
+    script:
+        - docker compose up api-tests || true
+    after_script:
+        - docker compose up report
+    artifacts:
+        paths:
+            - allure-report
+        when: on_success
+        expire_in: 10 days
+
+pages:
+  stage: report
+  needs:
+    - run_tests
+  script:
+    - mkdir public
+    - cp -r allure-report/* public
+  artifacts:
+    when: on_success
+    expire_in: never
+    paths:
+      - private
