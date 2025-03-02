@@ -1,0 +1,19 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Mar 02 19:58:38 GMT 2025","Sun Mar 02 19:58:39 GMT 2025","1145","test","test_trainer","TestTrainerAPi","","","test_change_trainer","
+        Test for changing trainer
+        "
+"passed","Sun Mar 02 19:58:34 GMT 2025","Sun Mar 02 19:58:34 GMT 2025","779","test","test_pokemons","TestPokemonsAPI","","","test_create_pokemon","
+        Test that pokemon can be created
+        "
+"passed","Sun Mar 02 19:58:34 GMT 2025","Sun Mar 02 19:58:35 GMT 2025","1582","test","test_pokemons","TestPokemonsAPI","","","test_change_pokemon","
+        Test that pokemon can be changed
+        "
+"passed","Sun Mar 02 19:58:34 GMT 2025","Sun Mar 02 19:58:34 GMT 2025","748","test","test_pokemons","TestPokemonsAPI","","","test_get_pokemon_by_trainer_id","
+        Test that pokemons can be retrieved by trainer id
+        "
+"passed","Sun Mar 02 19:58:38 GMT 2025","Sun Mar 02 19:58:38 GMT 2025","475","test","test_trainer","TestTrainerAPi","","","test_get_trainer_by_id","
+        Test for getting trainer by trainer ID
+        "
+"passed","Sun Mar 02 19:58:34 GMT 2025","Sun Mar 02 19:58:35 GMT 2025","1591","test","test_pokemons","TestPokemonsAPI","","","test_delete_pokemon","
+        Test that pokemon can be deleted
+        "
