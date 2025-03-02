@@ -1,0 +1,8 @@
+2025-03-02 19:28:28.552 | INFO     | utils.helper:log:25 - REQUEST METHOD: POST
+2025-03-02 19:28:28.552 | INFO     | utils.helper:log:26 - REQUEST URL: https://api.pokemonbattle-stage.ru/v2/pokemons
+2025-03-02 19:28:28.552 | INFO     | utils.helper:log:27 - REQUEST HEADERS: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'trainer_token': 'c0087f629b2a7abd6883e366f43b2bc2', 'Content-Length': '70'}
+2025-03-02 19:28:28.552 | INFO     | utils.helper:log:28 - REQUEST BODY: {'name': 'Никифор', 'photo_id': 11}
+2025-03-02 19:28:28.553 | INFO     | utils.helper:log:29 - STATUS CODE: 201
+2025-03-02 19:28:28.553 | INFO     | utils.helper:log:30 - RESPONSE TIME: 781 ms
+2025-03-02 19:28:28.553 | INFO     | utils.helper:log:31 - RESPONSE HEADERS: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Sun, 02 Mar 2025 19:28:28 GMT', 'Content-Type': 'application/json', 'Content-Length': '53', 'Connection': 'keep-alive', 'charset': 'utf-8', 'trace_id': '988b279f1f1a518a54ee6e6953d29a41'}
+2025-03-02 19:28:28.553 | INFO     | utils.helper:log:32 - RESPONSE BODY: {"message":"Покемон создан","id":"7468"}
