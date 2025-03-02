@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+LABEL authors="kompik52"
+
+ENTRYPOINT ["top", "-b"]

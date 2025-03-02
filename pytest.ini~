@@ -1,0 +1,4 @@
+[pytest]
+log_cli = false
+testpaths = tests
+addopts = -n auto -rsxX -l -v --alluredir=allure-results --reruns=3
