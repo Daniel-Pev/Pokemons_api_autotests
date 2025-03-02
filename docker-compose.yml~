@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+  api-tests:
+    image: api-tests:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: /bin/sh -c "STAGE=$$STAGE pip3 install -r requirements.txt && pytest --alluredir=allure-results"
+    working_dir: /usr/workspace
+    environment:
+      STAGE: DEV
+      SUITE: users
+      API_TOKEN: ${API_TOKEN}
+      TOKEN_PROD: ${TOKEN_PROD}
+      TOKEN_DEV: ${TOKEN_DEV}
+      NAME: ${NAME}
+      ID: ${ID}
+      TRAINER_ID_PROD: ${TRAINER_ID_PROD}
+      TRAINER_ID_DEV: ${TRAINER_ID_DEV}
+
+  report:
+    image: api-tests:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: /bin/sh -c "allure generate allure-results --clean -o allure-report"
+    working_dir: /usr/workspace
