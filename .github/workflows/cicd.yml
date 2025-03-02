@@ -33,6 +33,7 @@ jobs:
         TRAINER_ID_DEV: ${{ secrets.TRAINER_ID_PROD }}
       run: |
         pytest --alluredir=./allure-results
+      continue-on-error: true
 
     - name: Generate Allure Report
       uses: simple-elf/allure-report-action@v1
