@@ -26,6 +26,7 @@ jobs:
 
     - name: Run tests with pytest
       env:
+        STAGE: ${{ secrets.STAGE }}
         TOKEN_DEV: ${{ secrets.TOKEN_DEV }}
         TOKEN_PROD: ${{ secrets.TOKEN_PROD }}
         TRAINER_ID_PROD: ${{ secrets.TRAINER_ID_DEV }}
