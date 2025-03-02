@@ -32,7 +32,7 @@ jobs:
         TRAINER_ID_PROD: ${{ secrets.TRAINER_ID_PROD }}
         TRAINER_ID_DEV: ${{ secrets.TRAINER_ID_DEV }}
       run: |
-        pytest
+        pytest --alluredir=build/allure-results
       continue-on-error: true
 
     - name: Load test report history
@@ -57,4 +57,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: allure-history
+        publish_dir: gh-pages/allure-report
