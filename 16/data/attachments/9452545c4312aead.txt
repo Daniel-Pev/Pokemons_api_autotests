@@ -1,0 +1,16 @@
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:25 - REQUEST METHOD: POST
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:26 - REQUEST URL: https://api.pokemonbattle-stage.ru/v2/pokemons
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:27 - REQUEST HEADERS: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'trainer_token': 'c0087f629b2a7abd6883e366f43b2bc2', 'Content-Length': '77'}
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:28 - REQUEST BODY: {'name': 'Василиса', 'photo_id': 497}
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:29 - STATUS CODE: 201
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:30 - RESPONSE TIME: 484 ms
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:31 - RESPONSE HEADERS: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Sun, 02 Mar 2025 19:54:33 GMT', 'Content-Type': 'application/json', 'Content-Length': '53', 'Connection': 'keep-alive', 'charset': 'utf-8', 'trace_id': 'd1fc9fc3f8c6c7f11f9e0e0de500c194'}
+2025-03-02 19:54:33.691 | INFO     | utils.helper:log:32 - RESPONSE BODY: {"message":"Покемон создан","id":"7488"}
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:25 - REQUEST METHOD: PUT
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:26 - REQUEST URL: https://api.pokemonbattle-stage.ru/v2/pokemons
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:27 - REQUEST HEADERS: {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'trainer_token': 'c0087f629b2a7abd6883e366f43b2bc2', 'Content-Length': '87'}
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:28 - REQUEST BODY: {'pokemon_id': '7488', 'name': 'Симон', 'photo_id': 73}
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:29 - STATUS CODE: 200
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:30 - RESPONSE TIME: 783 ms
+2025-03-02 19:54:34.475 | INFO     | utils.helper:log:31 - RESPONSE HEADERS: {'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Sun, 02 Mar 2025 19:54:34 GMT', 'Content-Type': 'application/json', 'Content-Length': '85', 'Connection': 'keep-alive', 'charset': 'utf-8', 'trace_id': '5199f448f8f55847943184cdca72b1ce'}
+2025-03-02 19:54:34.476 | INFO     | utils.helper:log:32 - RESPONSE BODY: {"message":"Информация о покемоне обновлена","id":"7488"}
