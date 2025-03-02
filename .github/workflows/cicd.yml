@@ -32,7 +32,7 @@ jobs:
         TRAINER_ID_PROD: ${{ secrets.TRAINER_ID_PROD }}
         TRAINER_ID_DEV: ${{ secrets.TRAINER_ID_DEV }}
       run: |
-        pytest --alluredir=./allure-results
+        pytest
       continue-on-error: true
 
     - name: Load test report history
