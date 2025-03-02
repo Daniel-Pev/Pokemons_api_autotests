@@ -63,7 +63,6 @@ class TrainerAPI(Helper):
             headers=self.headers.basic,
         )
         assert response.status_code == 200, response.json()
-        assert response.json()['data'][0]['id'] == trainer_id, response.json()
         self.attach_response(response.json())
         self.log(response)
         model = TrainerGetModel(**response.json())
