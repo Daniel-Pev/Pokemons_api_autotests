@@ -6,7 +6,6 @@ import allure
 
 from config.base_test import BaseTest
 
-
 @allure.epic("Battle")
 @allure.feature("Trainer")
 class TestTrainerAPi(BaseTest):

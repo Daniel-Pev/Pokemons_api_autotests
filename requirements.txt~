@@ -2,5 +2,8 @@ Faker==24.0.0
 python-dotenv==1.0.1
 loguru~=0.7.3
 pydantic~=2.6.3
-requests~=2.31.0
+requests~=2.32.0
 pytest~=8.0.2
+pytest-xdist==3.6.1
+pytest-rerunfailures==15.0
+pytest-allure==3.1.2

@@ -8,10 +8,10 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/workspace
-    command: /bin/sh -c "STAGE=$$STAGE pytest --alluredir=allure-results"
+    command: /bin/sh -c "STAGE=$$STAGE pip3 install -r requirements.txt && pytest --alluredir=allure-results"
     working_dir: /usr/workspace
     environment:
-      STAGE: prod
+      STAGE: DEV
       SUITE: users
       API_TOKEN: ${API_TOKEN}
 

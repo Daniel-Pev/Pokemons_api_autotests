@@ -10,3 +10,6 @@ RUN apk update && \
 WORKDIR /usr/workspace
 COPY ./requirements.txt /usr/workspace
 RUN pip3 install -r requirements.txt
+
+
+RUN mkdir -p /usr/workspace/allure-results
