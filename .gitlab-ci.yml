@@ -40,4 +40,4 @@ pages:
     when: on_success
     expire_in: never
     paths:
-      - public
+      - private
