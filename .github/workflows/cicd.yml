@@ -29,8 +29,8 @@ jobs:
         STAGE: ${{ secrets.STAGE }}
         TOKEN_DEV: ${{ secrets.TOKEN_DEV }}
         TOKEN_PROD: ${{ secrets.TOKEN_PROD }}
-        TRAINER_ID_PROD: ${{ secrets.TRAINER_ID_DEV }}
-        TRAINER_ID_DEV: ${{ secrets.TRAINER_ID_PROD }}
+        TRAINER_ID_PROD: ${{ secrets.TRAINER_ID_PROD }}
+        TRAINER_ID_DEV: ${{ secrets.TRAINER_ID_DEV }}
       run: |
         pytest --alluredir=./allure-results
       continue-on-error: true
