@@ -43,5 +43,5 @@ The following environment variables are required:
 
 Test results are reported using Allure. The report is generated after each test run and can be found in the `allure-report` directory.
 
-You can see the tests run trend history on gitgub pages:
+You can see the tests run trend history on github pages:
 https://daniel-pev.github.io/Pokemons_api_autotests
